@@ -41,9 +41,26 @@
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
-    background: black;
-    color: white;
+    background: rgb(252, 249, 249);
+    color: rgb(19, 1, 1);
     
   }
 }
 
+@media only screen and (max-width: 868px){
+  .stripe{
+    padding: 0 1rem;
+    h3{
+      font-size: 0.8rem;
+    }
+    .btn-stripe{
+      border: black solid 1px;
+      margin-top: 1rem;
+      padding: 0.5rem 2rem;
+      font-size: 0.8rem;
+    }
+    .stripe-wrap{
+      flex-direction: column;
+    }
+  }
+}
