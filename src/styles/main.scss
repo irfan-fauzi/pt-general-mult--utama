@@ -1,5 +1,6 @@
 @import '_base-style';
 @import '_header';
+@import '_stripe';
 
 .skip-link {
   position: absolute;
@@ -14,53 +15,3 @@
   top: 0;
 }
 
-.stripe{
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-image: linear-gradient(36deg, #ebbd05 25%, #e0d20b 25%, #e0d20b 50%, #ebbd05 50%, #ebbd05 75%, #e0d20b 75%, #e0d20b 100%);
-  background-size: 102.08px 74.16px;
-  h3{
-    font-family: "Montserrat", sans-serif;
-    text-transform: capitalize;
-    font-size: 1.6rem;
-    line-height: 1.5;
-  }
-  .stripe-wrap{
-    width: 1200px;
-    // border: red solid 1px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .btn-stripe{
-    padding: 1.2rem 2.7rem;
-    border: rgb(243, 239, 239) solid 3px;
-    border-radius: 50px;
-    text-transform: uppercase;
-    font-weight: 600;
-    cursor: pointer;
-    background: rgb(252, 249, 249);
-    color: rgb(19, 1, 1);
-    
-  }
-}
-
-@media only screen and (max-width: 868px){
-  .stripe{
-    padding: 0 1rem;
-    h3{
-      font-size: 0.8rem;
-    }
-    .btn-stripe{
-      border: black solid 1px;
-      margin-top: 1rem;
-      padding: 0.5rem 2rem;
-      font-size: 0.8rem;
-    }
-    .stripe-wrap{
-      flex-direction: column;
-    }
-  }
-}
