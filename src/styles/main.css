@@ -130,7 +130,7 @@ header .jumbotron__btn-wrap .btn-discover {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
