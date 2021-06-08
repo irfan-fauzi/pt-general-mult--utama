@@ -9,10 +9,4 @@ const clickMenu = () => {
   })
 }
 
-const deskripsi = document.querySelectorAll('.desc');
-deskripsi.forEach(el => {
-  const filt = el.innerHTML.substring(0, 300);
-  el.innerHTML = filt;
-});
-
 clickMenu();
