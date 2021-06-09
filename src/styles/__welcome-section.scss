@@ -1,6 +1,7 @@
 .welcome{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+ //grid-template-columns: 1fr 1fr;
   gap: 3rem;
   //border: red solid 1px;
   max-width: 1200px;
@@ -9,7 +10,7 @@
     // font-family: "Montserrat", sans-serif;
     color: rgb(72, 72, 75);
     .btn-welcome{
-      margin-top: 2rem;
+      margin-top: 1rem;
       border: none;
       padding: 1rem 3rem;
       border-radius: 25px;
@@ -28,7 +29,7 @@
       font-size: 1.6rem;
       color: rgb(11, 11, 63);
       font-family: Arial, Helvetica, sans-serif;
-      margin-top: 2.5rem;
+      margin-top: 0.5rem;
     }
     h4{
       margin: 1.6rem 0;
@@ -38,6 +39,10 @@
       line-height: 1.2;
       letter-spacing: 1px;
       color: rgb(11, 11, 63);
+    }
+    .welcome-signature{
+      display: block;
+      width: 200px;
     }
   }
   &__image-wrap{
@@ -120,7 +125,7 @@
 
 @media only screen and (max-width: 868px){
   .welcome{
-    margin: 1rem 0;
+    margin: 1.9rem 0;
     width: 100%;
     grid-template-columns: 1fr;
    &__text-wrap{
@@ -132,7 +137,7 @@
        font-size: 1.2rem;
      }
      h4{
-       font-size: 0.7rem;
+       font-size: 1rem;
        margin: 1rem 0;
     
      }

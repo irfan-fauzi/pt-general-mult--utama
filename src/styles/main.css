@@ -229,7 +229,8 @@ header::after {
   header .jumbotron__text-wrap h2 {
     margin: 1rem 0;
     padding: 0 1rem;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 400;
     line-height: 1.5;
     font-family: "Montserrat", sans-serif;
   }
@@ -327,7 +328,7 @@ header::after {
 }
 
 .welcome__text-wrap .btn-welcome {
-  margin-top: 2rem;
+  margin-top: 1rem;
   border: none;
   padding: 1rem 3rem;
   border-radius: 25px;
@@ -350,7 +351,7 @@ header::after {
   font-size: 1.6rem;
   color: #0b0b3f;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
 }
 
 .welcome__text-wrap h4 {
@@ -361,6 +362,11 @@ header::after {
   line-height: 1.2;
   letter-spacing: 1px;
   color: #0b0b3f;
+}
+
+.welcome__text-wrap .welcome-signature {
+  display: block;
+  width: 200px;
 }
 
 .welcome__image-wrap {
@@ -451,7 +457,7 @@ header::after {
 
 @media only screen and (max-width: 868px) {
   .welcome {
-    margin: 1rem 0;
+    margin: 1.9rem 0;
     width: 100%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -464,7 +470,7 @@ header::after {
     font-size: 1.2rem;
   }
   .welcome__text-wrap h4 {
-    font-size: 0.7rem;
+    font-size: 1rem;
     margin: 1rem 0;
   }
   .welcome__text-wrap .btn-welcome {
