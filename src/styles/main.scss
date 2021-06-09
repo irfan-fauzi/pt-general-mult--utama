@@ -64,6 +64,7 @@
       }
       h4{
         font-size: 0.8rem;
+        font-weight: 400;
       }
     }
   }
@@ -83,5 +84,18 @@
   h4{
     font-size: 1rem;
     font-weight: 600;
+  }
+}
+@media only screen and (max-width: 868px){
+  .main-service{
+    h2{
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .grid{
+      grid-template-columns: 1fr;
+      padding: 1rem;
+      
+    }
   }
 }
