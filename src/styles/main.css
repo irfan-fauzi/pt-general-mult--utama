@@ -20,7 +20,7 @@ a {
 
 header {
   width: 100%;
-  height: 680px;
+  height: 700px;
   background: url("https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: cover;
   background-position: center;
@@ -174,7 +174,7 @@ header::after {
 
 @media only screen and (max-width: 868px) {
   header {
-    height: 550px;
+    height: 670px;
   }
   header .nav__btn {
     display: block;
@@ -498,5 +498,90 @@ header::after {
 
 .skip-link:focus {
   top: 0;
+}
+
+.service {
+  background: #010157;
+  margin-top: -1rem;
+}
+
+.main-service {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.main-service h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 2rem;
+  text-decoration: underline;
+}
+
+.main-service .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-service .grid .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1px;
+}
+
+.main-service .grid .card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 15px;
+  padding: 0.7rem;
+  border-radius: 10px;
+  background: #e6c406;
+}
+
+.main-service .grid .card i {
+  color: #faf9f2;
+  font-size: 2rem;
+}
+
+.main-service .grid .card h3 {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.main-service .grid .card h4 {
+  font-size: 0.8rem;
+}
+
+.main-service h2 {
+  text-transform: capitalize;
+}
+
+.main-service .img-wrap {
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+.main-service img {
+  width: 100%;
+}
+
+.main-service h4 {
+  font-size: 1rem;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */

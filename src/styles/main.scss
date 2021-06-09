@@ -15,4 +15,73 @@
 .skip-link:focus {
   top: 0;
 }
+.service{
+ // border: blue solid 1px;
+  background: rgb(1, 1, 87);
+  margin-top: -1rem;
+}
 
+.main-service{
+  //border: red solid 1px;
+  max-width: 1000px;
+  margin: auto;
+  h2{
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 2rem;
+    text-decoration: underline;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   // border: red solid 1px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-family: "Montserrat", sans-serif;
+    .service{
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+     // border: red solid 1px;
+    }
+    .card{
+    //  border: red solid 1px;
+      box-sizing: border-box;
+      margin-top: 15px;
+      padding: 0.7rem;
+      border-radius: 10px;
+      background: rgb(230, 196, 6);
+      i{
+        color: rgb(250, 249, 242);
+        font-size: 2rem;
+        //margin-top: 1rem;
+      }
+      h3{
+        margin: 0.3rem 0;
+        font-size: 0.9rem;
+      }
+      h4{
+        font-size: 0.8rem;
+      }
+    }
+  }
+  
+  h2{
+    text-transform: capitalize;
+  }
+  .img-wrap{
+    //border: red solid 1px;
+    margin: 2rem 0;
+    overflow: hidden;
+   // border-radius: 100%;
+  }
+  img{
+    width: 100%;
+  }
+  h4{
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
