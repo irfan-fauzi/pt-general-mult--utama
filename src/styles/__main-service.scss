@@ -13,8 +13,9 @@
     }
 
 .main-service{
+  border: red solid 1px;
   .container{
- //   border: red solid 1px;
+    border: rgb(72, 255, 0) solid 1px;
     max-width: 1100px;
     margin: auto;
     font-family: "Montserrat", sans-serif;
@@ -70,6 +71,21 @@
             overflow: hidden;
           }
         }
+      }
+    }
+    h4{
+      text-align: center;
+    }
+    .logo-wika{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      //border: red solid 1px;
+      justify-content: center;
+      .card{
+       // border: red solid 1px;
+        display: flex;
+        align-items: center;
+        //width: 250px;
       }
     } 
   }

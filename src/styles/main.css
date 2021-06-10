@@ -561,7 +561,12 @@ header::after {
   color: white;
 }
 
+.main-service {
+  border: red solid 1px;
+}
+
 .main-service .container {
+  border: #48ff00 solid 1px;
   max-width: 1100px;
   margin: auto;
   font-family: "Montserrat", sans-serif;
@@ -633,6 +638,29 @@ header::after {
   width: 400px;
   height: 250px;
   overflow: hidden;
+}
+
+.main-service .container h4 {
+  text-align: center;
+}
+
+.main-service .container .logo-wika {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-service .container .logo-wika .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skip-link {
