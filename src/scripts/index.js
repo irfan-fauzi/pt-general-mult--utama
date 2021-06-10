@@ -45,4 +45,16 @@ tabEnergy.forEach(el => {
   })
 })
 
+const tabInfra = document.querySelectorAll('[data-infra-target]');
+const tabContentInfra = document.querySelectorAll('[data-infra-content]');
 
+tabInfra.forEach(el => {
+  el.addEventListener('click', () => {
+    const target = document.querySelector(el.dataset.infraTarget);
+    tabContentInfra.forEach(el => el.classList.remove('active'));
+    tabInfra.forEach(el => el.classList.remove('active'));
+
+    el.classList.add('active');
+    target.classList.add('active');
+  })
+})

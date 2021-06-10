@@ -162,3 +162,11 @@
   display: block;
 }
 
+[data-infra-content]{
+  display: none;
+}
+
+
+.active[data-infra-content]{
+  display: block;
+}

@@ -737,6 +737,14 @@ header::after {
   display: block;
 }
 
+[data-infra-content] {
+  display: none;
+}
+
+.active[data-infra-content] {
+  display: block;
+}
+
 .skip-link {
   position: absolute;
   top: -40px;
