@@ -2,11 +2,17 @@ header {
  // border: red solid 1px;
   width: 100%;
   height: 700px;
-  background: url('https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background: url('/images/heros/bg0.jpeg');
   background-size: cover;
   background-position: center;
+  animation: slideBg 15s linear infinite 0s;
+  animation-timing-function: linear;
+  backface-visibility: hidden;
+ 
   position: relative;
-  
+ // transition: ease-in-out 0.5s;
+ 
+
   .logo{
     width: 250px;
     z-index: 4;
@@ -202,4 +208,23 @@ header {
     }
   }
   
+}
+@keyframes slideBg {
+  0%{
+    background-image: url('/images/heros/bg0.jpeg');
+  }
+  25%{
+    background-image: url('/images/heros/bg1.jpeg');
+  }
+  50%{
+    background-image: url('/images/heros/bg2.jpeg');
+  }
+  75%{
+    background-image: url('/images/heros/bg3.jpeg');
+  }
+
+  100%{
+    background-image: url('/images/heros/bg0.jpeg');
+    
+  }
 }

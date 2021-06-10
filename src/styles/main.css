@@ -21,9 +21,15 @@ a {
 header {
   width: 100%;
   height: 700px;
-  background: url("https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background: url("/images/heros/bg0.jpeg");
   background-size: cover;
   background-position: center;
+  -webkit-animation: slideBg 15s linear infinite 0s;
+          animation: slideBg 15s linear infinite 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   position: relative;
 }
 
@@ -244,6 +250,42 @@ header::after {
   }
 }
 
+@-webkit-keyframes slideBg {
+  0% {
+    background-image: url("/images/heros/bg0.jpeg");
+  }
+  25% {
+    background-image: url("/images/heros/bg1.jpeg");
+  }
+  50% {
+    background-image: url("/images/heros/bg2.jpeg");
+  }
+  75% {
+    background-image: url("/images/heros/bg3.jpeg");
+  }
+  100% {
+    background-image: url("/images/heros/bg0.jpeg");
+  }
+}
+
+@keyframes slideBg {
+  0% {
+    background-image: url("/images/heros/bg0.jpeg");
+  }
+  25% {
+    background-image: url("/images/heros/bg1.jpeg");
+  }
+  50% {
+    background-image: url("/images/heros/bg2.jpeg");
+  }
+  75% {
+    background-image: url("/images/heros/bg3.jpeg");
+  }
+  100% {
+    background-image: url("/images/heros/bg0.jpeg");
+  }
+}
+
 .stripe {
   height: 180px;
   display: -webkit-box;
@@ -415,7 +457,8 @@ header::after {
   position: relative;
   z-index: 7;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 .welcome__image-wrap .wrap:hover::after {
@@ -424,7 +467,7 @@ header::after {
 }
 
 .welcome__image-wrap .hotel {
-  background: url("/images/heros/hotel.jpg");
+  background: url("https://images.pexels.com/photos/1057858/pexels-photo-1057858.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -432,7 +475,7 @@ header::after {
 }
 
 .welcome__image-wrap .shopping-center {
-  background: url("/images/heros/mall.jpg");
+  background: url("/images/heros/hotel.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -440,7 +483,7 @@ header::after {
 }
 
 .welcome__image-wrap .office-space {
-  background: url("/images/heros/office.jpg");
+  background: url("https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -453,6 +496,12 @@ header::after {
   background-size: cover;
   position: relative;
   top: 1rem;
+}
+
+.welcome__image-wrap .factory h5 {
+  font-size: 1rem;
+  padding: 0 2rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 868px) {

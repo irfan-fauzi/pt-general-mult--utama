@@ -81,7 +81,8 @@
         position: relative;
         z-index: 7;
         font-family: "Montserrat", sans-serif;
-        font-size: 1.4rem;
+        font-size: 1rem;
+        text-transform: uppercase;
       }
       &:hover{
        
@@ -92,21 +93,21 @@
        }
     }
     .hotel{
-      background: url('/images/heros/hotel.jpg');
+      background: url('https://images.pexels.com/photos/1057858/pexels-photo-1057858.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
       background-position: center;
       background-size: cover;
       position: relative;
       top: -2rem;
     }
     .shopping-center{
-      background: url('/images/heros/mall.jpg');
+      background: url('/images/heros/hotel.jpg');
       background-position: center;
       background-size: cover;
       position: relative;
       top: 1rem;
     }
     .office-space{
-      background: url('/images/heros/office.jpg');
+      background: url('https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
       background-position: center;
       background-size: cover;
       position: relative;
@@ -118,6 +119,11 @@
       background-size: cover;
       position: relative;
       top: 1rem;
+      h5{
+        font-size: 1rem;
+        padding: 0 2rem;
+        text-align: center;
+      }
     }
   }
 
