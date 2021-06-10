@@ -6,6 +6,10 @@
     .active[data-tab-content]{
       display: block;
     }
+
+    
+
+
     .tab.active{
       background: rgb(248, 173, 11);
       border: red solid 1px;
@@ -16,7 +20,7 @@
   border: red solid 1px;
   .container{
     border: rgb(72, 255, 0) solid 1px;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
     font-family: "Montserrat", sans-serif;
     .tabs{
@@ -72,10 +76,33 @@
           }
         }
       }
+      #satu-2{
+        .container{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        }
+      }
+      #dua-2{
+        .container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          .card{
+            width: 300px;
+          }
+        }
+      }
+
     }
-    h4{
+    h4, h5{
       text-align: center;
+      margin: 1rem 0;
     }
+
     .logo-wika{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -85,8 +112,21 @@
        // border: red solid 1px;
         display: flex;
         align-items: center;
+        justify-content: center;
         //width: 250px;
+        .logo-wika-konstruksi{
+          text-align: center;
+          width: 200px;
+        }
       }
     } 
   }
 }
+
+[data-energy-content]{
+  display: none;
+}
+.active[data-energy-content]{
+  display: block;
+}
+
