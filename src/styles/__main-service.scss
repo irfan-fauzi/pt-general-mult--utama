@@ -1,0 +1,54 @@
+.main-service{
+  //border: red solid 1px;
+  font-family: "Montserrat", sans-serif;
+  &__container{
+    //border: blue solid 1px;
+    max-width: 1200px;
+    margin: auto;
+    .tab-content{
+      border: rgb(225, 215, 215) solid 1px;
+      h2{
+        margin: 2rem 0;
+      }
+    }
+  }
+    [data-tab-content]{
+      display: none;
+    }
+    .active[data-tab-content]{
+      display: block;
+    }
+
+    .tabs{
+      display: flex;
+      justify-content: space-around;
+     // border-bottom: black solid 1px;
+      .tab{
+        cursor: pointer;
+        background: rgb(165, 209, 250);
+        //padding: 0.5rem 2rem;
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+        text-transform: capitalize;
+        color: rgb(19, 37, 109);
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: ease-in-out 0.3s;
+       // border: grey solid 1px;
+       // border-top-left-radius: 200px;
+       -webkit-clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
+        &:hover{
+          background: rgb(18, 9, 191);
+          color: white;
+        }
+      }
+    }
+    
+    .tab.active{
+      background: rgb(18, 9, 191);
+     // border: red solid 1px;
+      color: white;
+    }
+}

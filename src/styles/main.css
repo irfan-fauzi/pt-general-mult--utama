@@ -414,8 +414,8 @@ header::after {
 .welcome__image-wrap {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
   padding: 1rem;
   border-radius: 2px;
@@ -423,7 +423,7 @@ header::after {
 }
 
 .welcome__image-wrap .wrap {
-  height: 280px;
+  height: 200px;
   border-radius: 10px;
   cursor: pointer;
   display: -webkit-box;
@@ -453,7 +453,7 @@ header::after {
 }
 
 .welcome__image-wrap .wrap h5 {
-  color: #dfd8d8;
+  color: #f8f1f1;
   position: relative;
   z-index: 7;
   font-family: "Montserrat", sans-serif;
@@ -471,7 +471,13 @@ header::after {
   background-position: center;
   background-size: cover;
   position: relative;
-  top: -2rem;
+  top: -3rem;
+}
+
+.welcome__image-wrap .hotel h5 {
+  font-size: 1rem;
+  padding: 0 1rem;
+  text-align: center;
 }
 
 .welcome__image-wrap .shopping-center {
@@ -479,7 +485,6 @@ header::after {
   background-position: center;
   background-size: cover;
   position: relative;
-  top: 1rem;
 }
 
 .welcome__image-wrap .office-space {
@@ -487,7 +492,15 @@ header::after {
   background-position: center;
   background-size: cover;
   position: relative;
-  top: -2rem;
+  top: -3rem;
+}
+
+.welcome__image-wrap .industry {
+  background: url("/images/heros/factory.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: -3rem;
 }
 
 .welcome__image-wrap .factory {
@@ -495,7 +508,6 @@ header::after {
   background-position: center;
   background-size: cover;
   position: relative;
-  top: 1rem;
 }
 
 .welcome__image-wrap .factory h5 {
@@ -535,6 +547,65 @@ header::after {
   }
 }
 
+.main-service {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-service__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-service__container .tab-content {
+  border: #e1d7d7 solid 1px;
+}
+
+.main-service__container .tab-content h2 {
+  margin: 2rem 0;
+}
+
+.main-service [data-tab-content] {
+  display: none;
+}
+
+.main-service .active[data-tab-content] {
+  display: block;
+}
+
+.main-service .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-service .tabs .tab {
+  cursor: pointer;
+  background: #a5d1fa;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: #13256d;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  -webkit-clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
+}
+
+.main-service .tabs .tab:hover {
+  background: #1209bf;
+  color: white;
+}
+
+.main-service .tab.active {
+  background: #1209bf;
+  color: white;
+}
+
 .skip-link {
   position: absolute;
   top: -40px;
@@ -547,103 +618,5 @@ header::after {
 
 .skip-link:focus {
   top: 0;
-}
-
-.service {
-  background: #010157;
-  margin-top: -1rem;
-}
-
-.main-service {
-  max-width: 1000px;
-  margin: auto;
-}
-
-.main-service h2 {
-  color: #fff;
-  font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
-  padding-top: 2rem;
-  text-decoration: underline;
-}
-
-.main-service .grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 1rem;
-  font-family: "Montserrat", sans-serif;
-}
-
-.main-service .grid .service {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1px;
-}
-
-.main-service .grid .card {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-top: 15px;
-  padding: 0.7rem;
-  border-radius: 10px;
-  background: #e6c406;
-}
-
-.main-service .grid .card i {
-  color: #faf9f2;
-  font-size: 2rem;
-}
-
-.main-service .grid .card h3 {
-  margin: 0.3rem 0;
-  font-size: 0.9rem;
-}
-
-.main-service .grid .card h4 {
-  font-size: 0.8rem;
-  font-weight: 400;
-}
-
-.main-service h2 {
-  text-transform: capitalize;
-}
-
-.main-service .img-wrap {
-  margin: 2rem 0;
-  overflow: hidden;
-}
-
-.main-service img {
-  width: 100%;
-}
-
-.main-service h4 {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-@media only screen and (max-width: 868px) {
-  .main-service h2 {
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  .main-service .grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    padding: 1rem;
-  }
 }
 /*# sourceMappingURL=main.css.map */
