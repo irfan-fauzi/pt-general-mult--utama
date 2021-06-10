@@ -1,6 +1,7 @@
 import 'regenerator-runtime'; /* for async await transpile */
-import '../styles/main.css';
 
+import '../styles/main.css';
+import 'bootstrap'
 const clickMenu = () => {
   const menuBtn = document.querySelector('.nav__btn');
   const navList = document.querySelector('.nav__list');
