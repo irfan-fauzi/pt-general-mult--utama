@@ -11,41 +11,59 @@
 
 
     .tab.active{
-      background: rgb(248, 173, 11);
-      border: red solid 1px;
-      color: white;
+      background: rgb(219, 236, 242);
+    //  border: red solid 1px;
+      color: rgb(9, 9, 88);
     }
 
 .main-service{
-  border: red solid 1px;
+  //border: red solid 1px;
   .container{
-    border: rgb(72, 255, 0) solid 1px;
+   // border: rgb(72, 255, 0) solid 1px;
     max-width: 1200px;
     margin: auto;
     font-family: "Montserrat", sans-serif;
+    h2{
+      margin: 2rem 0;
+      text-transform: uppercase;
+    }
     .tabs{
       display: flex;
     //  tobol tab------------------------
       .tab{
-        border: blue solid 1px;
+        border: rgb(220, 220, 237) solid 1px;
+        
         width: 100%;
         cursor: pointer;
         padding: 1rem;
         text-align: center;
         font-size: 1.2rem;
-        font-weight: 600;
+        font-weight: 800;
         text-transform: capitalize;
+        clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
       }
       // ------------------------------
     }
     .tab-content{
-      margin: 2rem 0;
+      //margin: 2rem 0;
+    //  border: red solid 1px;
+      background: rgb(219, 236, 242);
+      padding: 0 1rem 2rem 1rem;
+      height: 460px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       #satu{
         .text-wrap{
           padding-right: 15rem;
+          h3{
+            text-transform: capitalize;
+            color: rgb(9, 9, 88);
+          }
           h4{
             font-size: 1rem;
             font-weight: 400;
+            text-align: left;
           }
         }
         .img-wrap{
@@ -61,6 +79,11 @@
             width: 400px;
             height: 250px;
             overflow: hidden;
+            h3{
+              margin: 10px 0;
+              color: rgb(9, 9, 88);
+              text-transform: capitalize;
+            }
           }
         }
       }
@@ -73,24 +96,33 @@
             width: 400px;
             height: 250px;
             overflow: hidden;
+            h3{
+              margin: 10px 0;
+              color: rgb(9, 9, 88);
+              text-transform: capitalize;
+            }
           }
         }
       }
       #satu-2{
+      
         .container{
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-          align-items: center;
+         // align-items: center;
           justify-content: center;
           gap: 10px;
+          //border: red solid 1px;
+          margin-top: 4rem;
+          height: 100%;
         }
       }
       #dua-2{
         .container{
           display: flex;
           justify-content: center;
-          align-items: center;
-          gap: 10px;
+          //align-items: center;
+          gap: 5px;
           .card{
             width: 300px;
           }

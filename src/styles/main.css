@@ -556,20 +556,19 @@ header::after {
 }
 
 .tab.active {
-  background: #f8ad0b;
-  border: red solid 1px;
-  color: white;
-}
-
-.main-service {
-  border: red solid 1px;
+  background: #dbecf2;
+  color: #090958;
 }
 
 .main-service .container {
-  border: #48ff00 solid 1px;
   max-width: 1200px;
   margin: auto;
   font-family: "Montserrat", sans-serif;
+}
+
+.main-service .container h2 {
+  margin: 2rem 0;
+  text-transform: uppercase;
 }
 
 .main-service .container .tabs {
@@ -579,27 +578,46 @@ header::after {
 }
 
 .main-service .container .tabs .tab {
-  border: blue solid 1px;
+  border: #dcdced solid 1px;
   width: 100%;
   cursor: pointer;
   padding: 1rem;
   text-align: center;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: capitalize;
+  -webkit-clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
 }
 
 .main-service .container .tab-content {
-  margin: 2rem 0;
+  background: #dbecf2;
+  padding: 0 1rem 2rem 1rem;
+  height: 460px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-service .container .tab-content #satu .text-wrap {
   padding-right: 15rem;
 }
 
+.main-service .container .tab-content #satu .text-wrap h3 {
+  text-transform: capitalize;
+  color: #090958;
+}
+
 .main-service .container .tab-content #satu .text-wrap h4 {
   font-size: 1rem;
   font-weight: 400;
+  text-align: left;
 }
 
 .main-service .container .tab-content #satu .img-wrap {
@@ -624,6 +642,12 @@ header::after {
   overflow: hidden;
 }
 
+.main-service .container .tab-content #dua .container .card h3 {
+  margin: 10px 0;
+  color: #090958;
+  text-transform: capitalize;
+}
+
 .main-service .container .tab-content #tiga .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -640,18 +664,23 @@ header::after {
   overflow: hidden;
 }
 
+.main-service .container .tab-content #tiga .container .card h3 {
+  margin: 10px 0;
+  color: #090958;
+  text-transform: capitalize;
+}
+
 .main-service .container .tab-content #satu-2 .container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+  margin-top: 4rem;
+  height: 100%;
 }
 
 .main-service .container .tab-content #dua-2 .container {
@@ -661,10 +690,7 @@ header::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .main-service .container .tab-content #dua-2 .container .card {
