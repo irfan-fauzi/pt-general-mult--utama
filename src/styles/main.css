@@ -547,63 +547,92 @@ header::after {
   }
 }
 
-.main-service {
-  font-family: "Montserrat", sans-serif;
-}
-
-.main-service__container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.main-service__container .tab-content {
-  border: #e1d7d7 solid 1px;
-}
-
-.main-service__container .tab-content h2 {
-  margin: 2rem 0;
-}
-
-.main-service [data-tab-content] {
+[data-tab-content] {
   display: none;
 }
 
-.main-service .active[data-tab-content] {
+.active[data-tab-content] {
   display: block;
 }
 
-.main-service .tabs {
+.tab.active {
+  background: #f8ad0b;
+  border: red solid 1px;
+  color: white;
+}
+
+.main-service .container {
+  max-width: 1100px;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-service .container .tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
-.main-service .tabs .tab {
-  cursor: pointer;
-  background: #a5d1fa;
+.main-service .container .tabs .tab {
+  border: blue solid 1px;
   width: 100%;
+  cursor: pointer;
   padding: 1rem;
   text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
   text-transform: capitalize;
-  color: #13256d;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
-  -webkit-clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
 }
 
-.main-service .tabs .tab:hover {
-  background: #1209bf;
-  color: white;
+.main-service .container .tab-content {
+  margin: 2rem 0;
 }
 
-.main-service .tab.active {
-  background: #1209bf;
-  color: white;
+.main-service .container .tab-content #satu .text-wrap {
+  padding-right: 15rem;
+}
+
+.main-service .container .tab-content #satu .text-wrap h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.main-service .container .tab-content #satu .img-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-service .container .tab-content #dua .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.main-service .container .tab-content #dua .container .card {
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.main-service .container .tab-content #tiga .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.main-service .container .tab-content #tiga .container .card {
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
 }
 
 .skip-link {
