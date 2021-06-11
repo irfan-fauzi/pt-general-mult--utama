@@ -2,7 +2,7 @@ header {
  // border: red solid 1px;
   width: 100%;
   height: 700px;
-  background: url('/images/heros/bg0.jpeg');
+  background: url('https://raw.githubusercontent.com/irfan-fauzi/pt-general-mult--utama/main/src/public/images/heros/bg0.jpeg');
   background-size: cover;
   background-position: center;
   animation: slideBg 15s linear infinite 0s;
@@ -211,20 +211,20 @@ header {
 }
 @keyframes slideBg {
   0%{
-    background-image: url('/images/heros/bg0.jpeg');
+    background-image: url('https://raw.githubusercontent.com/irfan-fauzi/pt-general-mult--utama/main/src/public/images/heros/bg0.jpeg');
   }
   25%{
-    background-image: url('/images/heros/bg1.jpeg');
+    background-image: url('https://raw.githubusercontent.com/irfan-fauzi/pt-general-mult--utama/main/src/public/images/heros/bg1.jpeg');
   }
   50%{
-    background-image: url('/images/heros/bg2.jpeg');
+    background-image: url('https://raw.githubusercontent.com/irfan-fauzi/pt-general-mult--utama/main/src/public/images/heros/bg2.jpeg');
   }
   75%{
-    background-image: url('/images/heros/bg3.jpeg');
+    background-image: url('https://raw.githubusercontent.com/irfan-fauzi/pt-general-mult--utama/main/src/public/images/heros/bg2.jpeg');
   }
 
   100%{
-    background-image: url('/images/heros/bg0.jpeg');
+    background-image: url('https://raw.githubusercontent.com/irfan-fauzi/pt-general-mult--utama/main/src/public/images/heros/bg0.jpeg');
     
   }
 }
