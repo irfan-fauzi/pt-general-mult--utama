@@ -155,6 +155,23 @@
           }
         }
       }
+      #property-1{
+        .container{
+          display: flex;
+          gap: 10px;
+          .card{
+            width: 380px;
+          }
+        }
+      }
+      #property-2{
+        .container{
+          display: flex;
+          .card{
+            width: 500px;
+          }
+        }
+      }
 
     }
     h4, h5{
@@ -198,5 +215,13 @@
 
 
 .active[data-infra-content]{
+  display: block;
+}
+
+[data-property-content]{
+  display: none;
+}
+
+.active[data-property-content]{
   display: block;
 }

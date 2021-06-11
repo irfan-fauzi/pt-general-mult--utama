@@ -45,6 +45,7 @@ tabEnergy.forEach(el => {
   })
 })
 
+// ----------------------------- infra
 const tabInfra = document.querySelectorAll('[data-infra-target]');
 const tabContentInfra = document.querySelectorAll('[data-infra-content]');
 
@@ -53,6 +54,23 @@ tabInfra.forEach(el => {
     const target = document.querySelector(el.dataset.infraTarget);
     tabContentInfra.forEach(el => el.classList.remove('active'));
     tabInfra.forEach(el => el.classList.remove('active'));
+
+    el.classList.add('active');
+    target.classList.add('active');
+  })
+})
+// --------------------------- end infra 
+
+// ------------------------- property -----
+
+const tabProperty = document.querySelectorAll('[data-property-target]');
+const tabContentProperty = document.querySelectorAll('[data-property-content]');
+
+tabProperty.forEach(el => {
+  el.addEventListener('click', () => {
+    const target = document.querySelector(el.dataset.propertyTarget);
+    tabContentProperty.forEach(el => el.classList.remove('active'));
+    tabProperty.forEach(el => el.classList.remove('active'));
 
     el.classList.add('active');
     target.classList.add('active');

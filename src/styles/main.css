@@ -730,6 +730,27 @@ header::after {
   width: 400px;
 }
 
+.main-service .container .tab-content #property-1 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.main-service .container .tab-content #property-1 .container .card {
+  width: 380px;
+}
+
+.main-service .container .tab-content #property-2 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-service .container .tab-content #property-2 .container .card {
+  width: 500px;
+}
+
 .main-service .container h4, .main-service .container h5 {
   text-align: center;
   margin: 1rem 0;
@@ -779,6 +800,14 @@ header::after {
 }
 
 .active[data-infra-content] {
+  display: block;
+}
+
+[data-property-content] {
+  display: none;
+}
+
+.active[data-property-content] {
   display: block;
 }
 
