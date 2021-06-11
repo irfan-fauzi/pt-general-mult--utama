@@ -613,6 +613,39 @@ header::after {
           align-items: center;
 }
 
+.main-service .container .tab-content #satu .preview-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 40;
+  max-width: 700px;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 0 5px 5px 5px;
+}
+
+.main-service .container .tab-content #satu .preview-box .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-service .container .tab-content #satu .preview-box .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.main-service .container .tab-content #satu .preview-box .img-box img {
+  width: 100%;
+}
+
 .main-service .container .tab-content #satu .container {
   display: -ms-grid;
   display: grid;
@@ -626,7 +659,18 @@ header::after {
 }
 
 .main-service .container .tab-content #satu .container .card {
-  width: 350px;
+  overflow: hidden;
+}
+
+.main-service .container .tab-content #satu .container .card img {
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.main-service .container .tab-content #satu .container .card img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main-service .container .tab-content #dua .container {
@@ -730,10 +774,6 @@ header::after {
           align-items: center;
   gap: 6px;
   padding: 2rem;
-}
-
-.main-service .container .tab-content #infra-2 .container .card {
-  width: 350px;
 }
 
 .main-service .container .tab-content #infra-3 .container {

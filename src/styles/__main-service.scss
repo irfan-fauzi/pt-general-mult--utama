@@ -62,7 +62,28 @@
       justify-content: center;
       align-items: center;
       #satu{
-        
+        .preview-box{
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          z-index: 40;
+          max-width: 700px;
+          width: 100%;
+          transform: translate(-50%,-50%);
+          padding: 0 5px 5px 5px;
+          .details{
+            display: flex;
+            justify-content: space-between;
+          }
+          .img-box{
+            display: flex;
+            width: 100%;
+            img{
+              width: 100%;
+            }
+          }
+        }
         .container{
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -70,7 +91,15 @@
           padding: 2rem;
           gap: 6px;
           .card{
-            width: 350px;
+            overflow: hidden;
+            img{
+              transition: ease-in-out 0.2s;
+              cursor: pointer;
+              &:hover{
+                transform: scale(1.1);
+                
+              }
+            }
           }
         }
       
@@ -158,9 +187,7 @@
           align-items: center;
           gap: 6px;
           padding: 2rem;
-          .card{
-            width: 350px;
-          }
+         
         }
       }
       #infra-3{
