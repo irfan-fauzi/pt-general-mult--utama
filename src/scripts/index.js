@@ -88,13 +88,28 @@ const closeIcon = document.querySelector('.close');
 
 window.onload = () => {
   for(let i = 0; i < galery.length; i++){
+    let newIndex = i;
     galery[i].onclick = () => {
 
       function preview(){
-        let selectedImgUrl = galery[i].querySelector('img').src;
+        let selectedImgUrl = galery[newIndex].querySelector('img').src;
         //console.log(selectedImgUrl)
         previewImg.src = selectedImgUrl
       }
+
+      const prevBtn = document.querySelector('.prev');
+      const nextBtn = document.querySelector('.next');
+
+      prevBtn.onclick = () => {
+        newIndex--;
+        preview()
+      }
+
+      nextBtn.onclick = () => {
+        newIndex++;
+        preview();
+      }
+
       preview()
       previewBox.classList.add('show')
       closeIcon.onclick = () => {
