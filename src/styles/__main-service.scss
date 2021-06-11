@@ -59,6 +59,7 @@
       justify-content: center;
       align-items: center;
       #satu{
+        
         .text-wrap{
           padding-right: 15rem;
           h3{
@@ -72,7 +73,8 @@
           }
         }
         .img-wrap{
-          display: flex;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
           gap: 10px;
         }
       }
