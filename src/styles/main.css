@@ -624,6 +624,7 @@ header::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 10px;
 }
 
 .main-service .container .tab-content #dua .container {
