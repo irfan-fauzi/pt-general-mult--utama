@@ -173,7 +173,15 @@
           }
         }
       }
-
+      #funding-1{
+        .container{
+          display: flex;
+          gap: 1rem;
+          .card{
+            width: 400px;
+          }
+        }
+      }
     }
     h4, h5{
       text-align: center;
@@ -226,3 +234,4 @@
 .active[data-property-content]{
   display: block;
 }
+

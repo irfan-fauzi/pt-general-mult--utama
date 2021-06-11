@@ -752,6 +752,17 @@ header::after {
   width: 500px;
 }
 
+.main-service .container .tab-content #funding-1 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.main-service .container .tab-content #funding-1 .container .card {
+  width: 400px;
+}
+
 .main-service .container h4, .main-service .container h5 {
   text-align: center;
   margin: 1rem 0;
