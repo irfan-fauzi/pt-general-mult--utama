@@ -42,8 +42,9 @@
         font-weight: 800;
         text-transform: capitalize;
         clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
+        transition: ease-in-out 0.3s;
         &:hover{
-          background: rgb(219, 236, 242);
+          background: rgb(156, 211, 231);
         }
       }
       // ------------------------------
@@ -51,31 +52,25 @@
     .tab-content{
       //margin: 2rem 0;
     //  border: red solid 1px;
-      background: rgb(219, 236, 242);
+      background: rgb(156, 211, 231);
       padding: 0 1rem 2rem 1rem;
-      height: 460px;
+      // height: 460px;
       display: flex;
       justify-content: center;
       align-items: center;
       #satu{
         
-        .text-wrap{
-          padding-right: 15rem;
-          h3{
-            text-transform: capitalize;
-            color: rgb(9, 9, 88);
-          }
-          h4{
-            font-size: 1rem;
-            font-weight: 400;
-            text-align: left;
-          }
-        }
-        .img-wrap{
+        .container{
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-          gap: 10px;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          align-items: center;
+          padding: 2rem;
+          gap: 6px;
+          .card{
+            width: 350px;
+          }
         }
+      
       }
       #dua{
         .container{
@@ -122,6 +117,10 @@
           //border: red solid 1px;
           margin-top: 4rem;
           height: 100%;
+          .card{
+            height: 190px;
+            overflow: hidden;
+          }
         }
       }
       #dua-2{
@@ -130,6 +129,7 @@
           justify-content: center;
           //align-items: center;
           gap: 5px;
+          padding: 2rem;
           .card{
             width: 300px;
           }
@@ -141,13 +141,20 @@
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
           gap: 10px;
+          padding: 2rem;
+          .card{
+            height: 250px;
+            overflow: hidden;
+          }
         }
       }
       #infra-2{
         .container{
-          display: flex;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           align-items: center;
-          gap: 10px;
+          gap: 6px;
+          padding: 2rem;
           .card{
             width: 350px;
           }
@@ -157,6 +164,7 @@
         .container{
           display: flex;
           gap: 10px;
+          padding: 2rem;
           .card{
             width: 400px;
           }
@@ -218,7 +226,7 @@
 }
 
 .tab.active{
-  background: rgb(219, 236, 242);
+  background: rgb(156, 211, 231);
 //  border: red solid 1px;
   color: rgb(7, 30, 119);
  // text-decoration: underline;

@@ -16,6 +16,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 header {
@@ -590,16 +591,17 @@ header::after {
   text-transform: capitalize;
   -webkit-clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
 .main-service .container .tabs .tab:hover {
-  background: #dbecf2;
+  background: #9cd3e7;
 }
 
 .main-service .container .tab-content {
-  background: #dbecf2;
+  background: #9cd3e7;
   padding: 0 1rem 2rem 1rem;
-  height: 460px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -611,27 +613,20 @@ header::after {
           align-items: center;
 }
 
-.main-service .container .tab-content #satu .text-wrap {
-  padding-right: 15rem;
-}
-
-.main-service .container .tab-content #satu .text-wrap h3 {
-  text-transform: capitalize;
-  color: #090958;
-}
-
-.main-service .container .tab-content #satu .text-wrap h4 {
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: left;
-}
-
-.main-service .container .tab-content #satu .img-wrap {
+.main-service .container .tab-content #satu .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  gap: 6px;
+}
+
+.main-service .container .tab-content #satu .container .card {
+  width: 350px;
 }
 
 .main-service .container .tab-content #dua .container {
@@ -691,6 +686,11 @@ header::after {
   height: 100%;
 }
 
+.main-service .container .tab-content #satu-2 .container .card {
+  height: 190px;
+  overflow: hidden;
+}
+
 .main-service .container .tab-content #dua-2 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -699,6 +699,7 @@ header::after {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 5px;
+  padding: 2rem;
 }
 
 .main-service .container .tab-content #dua-2 .container .card {
@@ -711,16 +712,24 @@ header::after {
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
+  padding: 2rem;
+}
+
+.main-service .container .tab-content #infra-1 .container .card {
+  height: 250px;
+  overflow: hidden;
 }
 
 .main-service .container .tab-content #infra-2 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 6px;
+  padding: 2rem;
 }
 
 .main-service .container .tab-content #infra-2 .container .card {
@@ -732,6 +741,7 @@ header::after {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  padding: 2rem;
 }
 
 .main-service .container .tab-content #infra-3 .container .card {
@@ -807,7 +817,7 @@ header::after {
 }
 
 .tab.active {
-  background: #dbecf2;
+  background: #9cd3e7;
   color: #071e77;
 }
 
