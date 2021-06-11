@@ -697,6 +697,39 @@ header::after {
   width: 300px;
 }
 
+.main-service .container .tab-content #infra-1 .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.main-service .container .tab-content #infra-2 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.main-service .container .tab-content #infra-2 .container .card {
+  width: 350px;
+}
+
+.main-service .container .tab-content #infra-3 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.main-service .container .tab-content #infra-3 .container .card {
+  width: 400px;
+}
+
 .main-service .container h4, .main-service .container h5 {
   text-align: center;
   margin: 1rem 0;
@@ -726,6 +759,10 @@ header::after {
 
 .main-service .container .logo-wika .card .logo-wika-konstruksi {
   text-align: center;
+  width: 200px;
+}
+
+.main-service .container .logo-wika .card .logo-wika-gedung {
   width: 200px;
 }
 
