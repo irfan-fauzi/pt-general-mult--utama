@@ -76,3 +76,30 @@ tabProperty.forEach(el => {
     target.classList.add('active');
   })
 })
+
+
+const satu = document.querySelector('#satu')
+const galery = satu.querySelectorAll('.container .card')
+const previewBox = document.querySelector('.preview-box');
+const previewImg = previewBox.querySelector('img');
+const closeIcon = document.querySelector('.close');
+
+
+
+window.onload = () => {
+  for(let i = 0; i < galery.length; i++){
+    galery[i].onclick = () => {
+
+      function preview(){
+        let selectedImgUrl = galery[i].querySelector('img').src;
+        //console.log(selectedImgUrl)
+        previewImg.src = selectedImgUrl
+      }
+      preview()
+      previewBox.classList.add('show')
+      closeIcon.onclick = () => {
+        previewBox.classList.remove('show')
+      }
+    }
+  }
+}
