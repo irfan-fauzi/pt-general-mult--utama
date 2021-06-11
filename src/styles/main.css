@@ -555,11 +555,6 @@ header::after {
   display: block;
 }
 
-.tab.active {
-  background: #dbecf2;
-  color: #090958;
-}
-
 .main-service .container {
   max-width: 1200px;
   margin: auto;
@@ -585,6 +580,7 @@ header::after {
 
 .main-service .container .tabs .tab {
   border: #dcdced solid 1px;
+  text-decoration: underline;
   width: 100%;
   cursor: pointer;
   padding: 1rem;
@@ -594,6 +590,10 @@ header::after {
   text-transform: capitalize;
   -webkit-clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
+}
+
+.main-service .container .tabs .tab:hover {
+  background: #dbecf2;
 }
 
 .main-service .container .tab-content {
@@ -806,6 +806,11 @@ header::after {
   width: 200px;
 }
 
+.tab.active {
+  background: #dbecf2;
+  color: #071e77;
+}
+
 [data-energy-content] {
   display: none;
 }
@@ -888,6 +893,11 @@ header::after {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2rem;
+}
+
+#contact .container .contact-info {
+  border: #eeeaea solid 1px;
+  padding: 10px;
 }
 
 #contact .container .contact-info h4 {

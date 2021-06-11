@@ -10,11 +10,7 @@
     
 
 
-    .tab.active{
-      background: rgb(219, 236, 242);
-    //  border: red solid 1px;
-      color: rgb(9, 9, 88);
-    }
+    
 
 .main-service{
   //border: red solid 1px;
@@ -37,7 +33,7 @@
     //  tobol tab------------------------
       .tab{
         border: rgb(220, 220, 237) solid 1px;
-        
+        text-decoration: underline;
         width: 100%;
         cursor: pointer;
         padding: 1rem;
@@ -46,6 +42,9 @@
         font-weight: 800;
         text-transform: capitalize;
         clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
+        &:hover{
+          background: rgb(219, 236, 242);
+        }
       }
       // ------------------------------
     }
@@ -217,6 +216,14 @@
     } 
   }
 }
+
+.tab.active{
+  background: rgb(219, 236, 242);
+//  border: red solid 1px;
+  color: rgb(7, 30, 119);
+ // text-decoration: underline;
+}
+
 
 [data-energy-content]{
   display: none;
