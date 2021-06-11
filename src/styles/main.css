@@ -843,4 +843,60 @@ header::after {
 .skip-link:focus {
   top: 0;
 }
+
+.our-client {
+  max-width: 1400px;
+  margin: 4rem auto;
+}
+
+.our-client h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 2rem 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+#contact {
+  background: #2c2c35;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+#contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1600px;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+#contact .container .map {
+  border: white solid 3px;
+}
+
+#contact .container .contact-info h4 {
+  font-weight: 200;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+#contact .container .contact-info .phone {
+  margin: 1rem 0;
+}
 /*# sourceMappingURL=main.css.map */
