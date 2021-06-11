@@ -19,6 +19,7 @@
     max-width: 1200px;
     margin: auto;
     font-family: "Montserrat", sans-serif;
+    
     h2{
       margin-top: 3rem;
       text-transform: uppercase;
@@ -30,6 +31,7 @@
     }
     .tabs{
       display: flex;
+      
     //  tobol tab------------------------
       .tab{
         border: rgb(220, 220, 237) solid 1px;
@@ -43,6 +45,7 @@
         text-transform: capitalize;
         clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
         transition: ease-in-out 0.3s;
+        
         &:hover{
           background: rgb(156, 211, 231);
         }
@@ -172,16 +175,17 @@
       }
       #property-1{
         .container{
-          display: flex;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           gap: 10px;
-          .card{
-            width: 380px;
-          }
+          padding: 2rem;
+          
         }
       }
       #property-2{
         .container{
           display: flex;
+          padding: 2rem;
           .card{
             width: 500px;
           }
@@ -192,7 +196,9 @@
           display: flex;
           gap: 1rem;
           .card{
-            width: 400px;
+           height: 200px;
+           width: 300px;
+           overflow: hidden;
           }
         }
       }

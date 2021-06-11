@@ -449,8 +449,8 @@ header::after {
   border-radius: 10px;
   top: 0;
   opacity: 0.7;
-  -webkit-transition: all ease-in 0.5s;
-  transition: all ease-in 0.5s;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
 }
 
 .welcome__image-wrap .wrap h5 {
@@ -497,7 +497,7 @@ header::after {
 }
 
 .welcome__image-wrap .industry {
-  background: url("https://raw.githubusercontent.com/irfan-fauzi/pt-general-mult--utama/main/src/public/images/heros/factory.jpg");
+  background: url("https://media-exp1.licdn.com/dms/image/C4E1BAQG5TBf5mPXZHA/company-background_10000/0/1586962637888?e=2159024400&v=beta&t=wboUh4JbNLsKPaevvzyzQYxqfg-H7-XcnuMxltonUqo");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -749,20 +749,19 @@ header::after {
 }
 
 .main-service .container .tab-content #property-1 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
-}
-
-.main-service .container .tab-content #property-1 .container .card {
-  width: 380px;
+  padding: 2rem;
 }
 
 .main-service .container .tab-content #property-2 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 2rem;
 }
 
 .main-service .container .tab-content #property-2 .container .card {
@@ -777,7 +776,9 @@ header::after {
 }
 
 .main-service .container .tab-content #funding-1 .container .card {
-  width: 400px;
+  height: 200px;
+  width: 300px;
+  overflow: hidden;
 }
 
 .main-service .container h4, .main-service .container h5 {
