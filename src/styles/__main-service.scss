@@ -130,25 +130,26 @@
          
         }
 
-        .container{
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          align-items: center;
-          padding: 2rem;
-          gap: 6px;
-          .card{
-            overflow: hidden;
-            img{
-              transition: ease-in-out 0.2s;
-              cursor: pointer;
-              &:hover{
-                transform: scale(1.1);
-                
-              }
+        
+      
+      }
+      .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        align-items: center;
+        padding: 2rem;
+        gap: 6px;
+        .img-con{
+          overflow: hidden;
+          img{
+            transition: ease-in-out 0.2s;
+            cursor: pointer;
+            &:hover{
+              transform: scale(1.1);
+              
             }
           }
         }
-      
       }
       #dua{
         .container{

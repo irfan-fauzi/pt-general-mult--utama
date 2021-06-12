@@ -686,7 +686,7 @@ header::after {
   transition: all ease-in-out 0.3s;
 }
 
-.main-service .container .tab-content #satu .container {
+.main-service .container .tab-content .container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
@@ -698,17 +698,17 @@ header::after {
   gap: 6px;
 }
 
-.main-service .container .tab-content #satu .container .card {
+.main-service .container .tab-content .container .img-con {
   overflow: hidden;
 }
 
-.main-service .container .tab-content #satu .container .card img {
+.main-service .container .tab-content .container .img-con img {
   -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
   cursor: pointer;
 }
 
-.main-service .container .tab-content #satu .container .card img:hover {
+.main-service .container .tab-content .container .img-con img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
