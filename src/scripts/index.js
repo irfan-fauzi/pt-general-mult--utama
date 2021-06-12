@@ -156,6 +156,35 @@ const closeIconSteel = steel.querySelector('.close');
 const prevSteel = previewBoxSteel.querySelector('.prev');
 const nextSteel = previewBoxSteel.querySelector('.next');
 
+// -------------------------- Reality property ---------------------
+
+// property-1
+const reality = document.querySelector('#property-1');
+const galeryReality = reality.querySelectorAll('.container .card');
+const previewBoxReality = reality.querySelector('.preview-box');
+const previewImgReality = previewBoxReality.querySelector('img');
+const closeIconReality = reality.querySelector('.close');
+const prevReality = previewBoxReality.querySelector('.prev');
+const nextReality = previewBoxReality.querySelector('.next');
+
+// management property
+const management = document.querySelector('#property-2');
+const galeryManagement = management.querySelectorAll('.container .card');
+const previewBoxManagement = management.querySelector('.preview-box');
+const previewImgManagement = previewBoxManagement.querySelector('img');
+const closeIconManagement = management.querySelector('.close');
+const prevManagement = previewBoxManagement.querySelector('.prev');
+const nextManagement = previewBoxManagement.querySelector('.next');
+
+
+// ------------------------ Funding ---------------------------
+const funding = document.querySelector('#funding-1');
+const galeryFunding = funding.querySelectorAll('.container .card');
+const previewBoxFunding = funding.querySelector('.preview-box');
+const previewImgFunding = previewBoxFunding.querySelector('img');
+const closeIconFunding = funding.querySelector('.close');
+const prevFunding = previewBoxFunding.querySelector('.prev');
+const nextFunding = previewBoxFunding.querySelector('.next');
 
 
 
@@ -177,6 +206,11 @@ window.onload = () => {
 
   fungsiPreviewPrecast(galerySteel, previewBoxSteel, previewImgSteel, closeIconSteel, shadow, prevSteel, nextSteel);
 
+  fungsiPreviewPrecast(galeryReality, previewBoxReality, previewImgReality, closeIconReality, shadow, prevReality, nextReality);
+
+  fungsiPreviewPrecast(galeryManagement, previewBoxManagement, previewImgManagement, closeIconManagement, shadow, prevManagement, nextManagement);
+
+  fungsiPreviewPrecast(galeryFunding, previewBoxFunding, previewImgFunding, closeIconFunding, shadow, prevFunding, nextFunding);
 }
 
 const fungsiPreviewPrecast = (galery, previewBox, previewImg, closeIcon, shadow, prevBtn, nextBtn ) => {
