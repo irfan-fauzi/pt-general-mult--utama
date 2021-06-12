@@ -78,11 +78,12 @@
            
             .close{
               cursor: pointer;
-              color: rgb(232, 15, 15);
+              color: rgb(232, 58, 58);
               position: absolute;
               right: 0;
               top: -10px;
               font-size: 2rem;
+              
             }
 
           }
@@ -100,14 +101,21 @@
               height: 50px;
               line-height: 50px;
               text-align: center;
+              transition: ease-in 0.3s;
+              &:hover{
+                color: gold;
+                
+              }
             }
             .slide.prev{
-              color: white;
+            
               left: 0;
+              cursor: pointer;
             }
             .slide.next{
-              color: rgb(248, 242, 242);
+             // color: rgb(248, 242, 242);
               right: 0;
+              cursor: pointer;
             }
             img{
               width: 100%;

@@ -629,7 +629,7 @@ header::after {
 
 .main-service .container .tab-content #satu .preview-box .details .close {
   cursor: pointer;
-  color: #e80f0f;
+  color: #e83a3a;
   position: absolute;
   right: 0;
   top: -10px;
@@ -655,16 +655,22 @@ header::after {
   height: 50px;
   line-height: 50px;
   text-align: center;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+.main-service .container .tab-content #satu .preview-box .img-box .slide:hover {
+  color: gold;
 }
 
 .main-service .container .tab-content #satu .preview-box .img-box .slide.prev {
-  color: white;
   left: 0;
+  cursor: pointer;
 }
 
 .main-service .container .tab-content #satu .preview-box .img-box .slide.next {
-  color: #f8f2f2;
   right: 0;
+  cursor: pointer;
 }
 
 .main-service .container .tab-content #satu .preview-box .img-box img {
@@ -1008,5 +1014,15 @@ header::after {
 .youtube {
   text-align: center;
   margin-top: 3rem;
+}
+
+.shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

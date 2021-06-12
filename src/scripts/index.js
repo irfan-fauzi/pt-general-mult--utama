@@ -83,14 +83,16 @@ const galery = satu.querySelectorAll('.container .card')
 const previewBox = document.querySelector('.preview-box');
 const previewImg = previewBox.querySelector('img');
 const closeIcon = document.querySelector('.close');
-
+const shadow = document.querySelector('.shadow');
 
 
 window.onload = () => {
   for(let i = 0; i < galery.length; i++){
     let newIndex = i;
+    let clickImgIndex;
+    
     galery[i].onclick = () => {
-
+      clickImgIndex = newIndex; 
       function preview(){
         let selectedImgUrl = galery[newIndex].querySelector('img').src;
         //console.log(selectedImgUrl)
@@ -100,20 +102,47 @@ window.onload = () => {
       const prevBtn = document.querySelector('.prev');
       const nextBtn = document.querySelector('.next');
 
+      if(newIndex == 0){
+        prevBtn.style.display = "none";
+      }
+      if(newIndex >= galery.length - 1){
+        nextBtn.style.display = "none";
+      }
+
       prevBtn.onclick = () => {
         newIndex--;
-        preview()
+        if(newIndex == 0){
+          preview();
+          prevBtn.style.display = "none";
+
+        } else {
+          preview();
+          nextBtn.style.display = "block";
+        }
+        
       }
 
       nextBtn.onclick = () => {
         newIndex++;
-        preview();
+        if(newIndex >= galery.length - 1){
+          preview();
+          nextBtn.style.display = "none";
+        } else {
+          preview();
+          prevBtn.style.display = "block";
+        }
       }
 
       preview()
-      previewBox.classList.add('show')
+      previewBox.classList.add('show');
+      shadow.style.display = "block";
+
       closeIcon.onclick = () => {
-        previewBox.classList.remove('show')
+        newIndex = clickImgIndex; 
+        prevBtn.style.display = "block";
+        nextBtn.style.display = "block";
+        previewBox.classList.remove('show');
+        shadow.style.display = "none";
       }
     }
   }
