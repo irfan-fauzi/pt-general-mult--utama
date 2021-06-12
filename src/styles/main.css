@@ -631,8 +631,8 @@ header::after {
   cursor: pointer;
   color: #e83a3a;
   position: absolute;
-  right: 0;
-  top: -10px;
+  right: -10px;
+  top: -20px;
   font-size: 2rem;
 }
 
