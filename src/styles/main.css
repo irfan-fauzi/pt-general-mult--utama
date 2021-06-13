@@ -180,7 +180,7 @@ header::after {
 
 @media only screen and (max-width: 868px) {
   header {
-    height: 670px;
+    height: 550px;
   }
   header .nav__btn {
     display: block;
@@ -940,6 +940,12 @@ header::after {
 .youtube {
   text-align: center;
   margin-top: 3rem;
+}
+
+@media only screen and (max-width: 868px) {
+  .youtube .yt {
+    width: 400px;
+  }
 }
 
 .preview-box {
