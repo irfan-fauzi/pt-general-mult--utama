@@ -14,6 +14,7 @@
 
 .main-service{
   //border: red solid 1px;
+  
   .container{
    // border: rgb(72, 255, 0) solid 1px;
     max-width: 1200px;
@@ -21,7 +22,7 @@
     font-family: "Montserrat", sans-serif;
     
     h2{
-      margin-top: 3rem;
+      margin-top: 7rem;
       text-transform: uppercase;
       margin-bottom: 1rem;
       text-decoration: underline;
@@ -214,7 +215,7 @@
     .logo-wika{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      //border: red solid 1px;
+      border-bottom: rgb(138, 129, 129) solid 1px;
       justify-content: center;
       .card{
        // border: red solid 1px;
@@ -222,12 +223,9 @@
         align-items: center;
         justify-content: center;
         //width: 250px;
-        .logo-wika-konstruksi{
-          text-align: center;
-          width: 200px;
-        }
-        .logo-wika-gedung{
-          width: 200px;
+        h3{
+          text-decoration: none;
+          line-height: 2;
         }
       }
     } 
